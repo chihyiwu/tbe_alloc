@@ -1352,8 +1352,8 @@ class TbeAllocController extends RController
                 XPHPExcel::init();
                 $fileTitle = "JIT $qry_dates Export File";
                 $objPHPExcel= XPHPExcel::createPHPExcel();
-                $objPHPExcel->getProperties()->setCreator("JIT")
-                                             ->setLastModifiedBy("JIT")
+                $objPHPExcel->getProperties()->setCreator("Alloc")
+                                             ->setLastModifiedBy("Alloc")
                                              ->setTitle($fileTitle)
                                              ->setSubject("")
                                              ->setDescription($fileTitle)
@@ -1393,7 +1393,7 @@ class TbeAllocController extends RController
                     }
                 }
                 //sheet 表名稱
-                $objPHPExcel->getActiveSheet()->setTitle($qry_dates.'調撥費用單');
+                $objPHPExcel->getActiveSheet()->setTitle($qry_dates.'調撥單');
                 // Set active sheet index to the first sheet, so Excel opens this as the first sheet
                 $objPHPExcel->setActiveSheetIndex(0);
                 // Redirect output to a web browser (Excel5)

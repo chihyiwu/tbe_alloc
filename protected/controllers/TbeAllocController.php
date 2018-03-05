@@ -1793,12 +1793,6 @@ class TbeAllocController extends RController
         }
         
         /**
-        * // 1. 判斷調撥單是否存在
-           // 2. 若存在, 刪除
-           // 3. 判斷費用單是否存在
-           // 4. 若存在, 刪除
-           // 5. 判斷廣告費是否存在
-           // 6. 若存在, 清空         
          * @param type $ano --調撥編號 
          **/
         private function checkano($ano) 

@@ -1,5 +1,5 @@
 # tbe_alloc
-物流品項費用轉匯出成正航費用單據
+EXCEL費用上傳 & EXCEL下載功能實作
 導入PHPEXCEL 套件
 
 可讀取.XLS .XLSX 試算表
